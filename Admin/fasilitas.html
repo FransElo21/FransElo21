@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="Logo.png" alt="Institut Teknologi Del" width="50">
+        <h6>Institut Teknologi Del</h6>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="Dashboard_admin.html" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-basket-fill"></i>Tentang del</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pendidikan.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-book"></i>Program Pendidikan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-envelope"></i>Akses Cepat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Lembaga.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-building"></i>Lembaga</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fasilitas.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-laptop"></i>Fasilitas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/akun-user" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-people-fill"></i>Karir</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin-new" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-person-fill-add"></i> Daftar Admin Baru</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Pengumuman</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Account</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10 content">
+                <h1>Manajemen Fasilitas</h1>
+                <br>
+                <div>
+
+                    <!-- Tambahkan kode berikut untuk daftar pengumuman -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Judul</th>
+                                <th style="width: 40%;">Deskripsi</th>
+                                <th style="width: 20%;">Gambar</th>
+                                <th style="width: 20%;">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Laboratorium dan kelas</td>
+                                <td>Laboratorium Komputasi adalah ruangan yang..</td>
+                                <td><img src="lab.jpg" alt="" width="150" height="100"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Akomodasi</td>
+                                <td>Institut Teknologi Del (IT Del) menyediakan fasilitas perumahan untuk dosen dan staf
+                                </td>
+                                <td><img src="akomodasi.jpg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>kantin</td>
+                                <td>Kantin Politeknik Informatika Del menyediakan menu makanan yang bergizi dan sehat
+                                    untuk semua mahasiswa/i.</td>
+                                <td><img src="kantin.jpg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Perpustakaan</td>
+                                <td>Perpustakaan Politeknik Informatika Del (PI Del) berdiri sejak tanggal 9 Januari
+                                    2002</td>
+                                <td><img src="perpus.jpeg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hiburan dan Olahraga</td>
+                                <td>Selain fasilitas untuk keperluan proses belajar mengajar, IT Del juga menyediakan
+                                    sarana hiburan dan olahraga</td>
+                                <td><img src="olahraga.jpg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ruang Terbuka</td>
+                                <td>Saat kita memperhatikan lingkungan kampus di Indonesia maka mungkin hasilnya akan
+                                    bertolak belakang dengan saat kita membayangkan lingkungan kampus di negara-negara
+                                    maju.</td>
+                                <td><img src="ruangan.jpeg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Klinik</td>
+                                <td>Praktek umum dokter Del resmi didirikan pada bulan Mei tahun 2009,</td>
+                                <td><img src="klinik.jpg" alt="" width="150"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Hapus</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#tambahPengumumanModal">
+                        Tambahkan data
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

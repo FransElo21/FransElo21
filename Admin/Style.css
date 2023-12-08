@@ -1,0 +1,156 @@
+ .navbar {
+     background-color: #0477BF;
+     color: #fff;
+     height: 80px;
+ }
+
+ .sidebar {
+     background-color: #333;
+     height: 100vh;
+ }
+
+ .sidebar a {
+     color: #fff;
+     /* Mengubah warna teks menjadi putih */
+ }
+
+ .content {
+     margin-top: 20px;
+     padding: 20px;
+ }
+
+ .navbar-brand {
+     color: #fff;
+ }
+
+ .navbar-nav .nav-link {
+     color: #fff;
+ }
+
+ .navbar-toggler {
+     color: #fff;
+     border-color: #fff;
+ }
+
+ .navbar-toggler-icon {
+     background-image: url('https://example.com/login-icon.png');
+     background-size: cover;
+     width: 20px;
+     height: 20px;
+ }
+
+ .form-group {
+     margin-bottom: 10px;
+ }
+
+ @keyframes fade-in {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .card {
+     margin: 10px;
+     cursor: pointer;
+     background-color: #46166c;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+     animation: fade-in 3s ease-out;
+ }
+
+
+ .card-body {
+     padding: 10px;
+ }
+
+ .card-title {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #fff;
+ }
+
+ .card-text {
+     color: #fff;
+ }
+
+ .card-description {
+     font-size: 0.9rem;
+     color: #fff;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ th,
+ td {
+     padding: 8px;
+     text-align: left;
+     border-bottom: 1px solid #ddd;
+ }
+
+ th {
+     background-color: #f2f2f2;
+ }
+
+ .box {
+     display: flex;
+ }
+
+ .box-item {
+     flex: 1;
+     text-align: center;
+     padding: 20px;
+     background-color: rgb(7, 133, 205);
+     color: #fff;
+     margin: 0 10px;
+ }
+
+ .box-item i {
+     font-size: 24px;
+     margin-bottom: 10px;
+ }
+
+ h3 {
+     margin: 0;
+     font-size: 18px;
+ }
+
+ .count {
+     margin: 5px 0;
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ table {
+     table-layout: fixed;
+     width: 100%;
+ }
+
+ th,
+ td {
+     text-align: left;
+     padding: 8px;
+ }
+
+ th {
+     background-color: #f2f2f2;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+ }
+
+ .chart-container {
+     margin-right: auto;
+ }
+
+ canvas {
+     max-width: 100%;
+     height: auto;
+ }

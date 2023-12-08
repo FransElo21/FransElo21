@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="Logo.png" alt="Institut Teknologi Del" width="50">
+        <h6>Institut Teknologi Del</h6>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="Dashboard_admin.html" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-basket-fill"></i>Tentang del</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pendidikan.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-book"></i>Program Pendidikan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-envelope"></i>Akses Cepat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Lembaga.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-building"></i>Lembaga</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fasilitas.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-laptop"></i>Fasilitas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/akun-user" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-people-fill"></i>Karir</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin-new" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-person-fill-add"></i> Daftar Admin Baru</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Pengumuman</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Account</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" id="card1">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">LPPM</h5>
+                                    <p class="card-text">Deskripsi LPPM.</p>
+                                    <button class="btn btn-outline-light"
+                                        onclick="tampilkanForm('form1', 'card1')">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Mitra Kerjasama IT Del</h5>
+                                    <p class="card-text">Deskripsi Mitra Kerjasama IT Del.</p>
+                                    <button class="btn btn-outline-light" onclick="tampilkanForm('form2')">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">UPT PP ESTEM</h5>
+                                    <p class="card-text">Deskripsi UPT PP ESTEM.</p>
+                                    <button class="btn btn-outline-light" onclick="tampilkanForm('form3')">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistem Penjaminan Mutu</h5>
+                                        <p class="card-text">Deskripsi SPM.</p>
+                                        <button class="btn btn-outline-light"
+                                            onclick="tampilkanForm('form4')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pusat Modal Manusia</h5>
+                                        <p class="card-text">Deskripsi PMM.</p>
+                                        <button class="btn btn-outline-light"
+                                            onclick="tampilkanForm('form5')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Koperasi</h5>
+                                        <p class="card-text">Deskripsi Koperasi.</p>
+                                        <button class="btn btn-outline-light"
+                                            onclick="tampilkanForm('form6')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pusat Bahasa Del</h5>
+                                        <p class="card-text">Deskripsi Pusat Bahasa Del.</p>
+                                        <button class="btn btn-outline-light"
+                                            onclick="tampilkanForm('form7')">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="formContainer"></div>
+
+                    <script>
+                        function tampilkanForm(formId, cardId) {
+                            var formContainer = document.getElementById("formContainer");
+
+                            formContainer.innerHTML = ""; // Menghapus form sebelumnya
+
+                            // Mengumpulkan semua kartu ke dalam array
+                            var cards = document.getElementsByClassName("card");
+
+                            // Menyembunyikan semua kartu
+                            for (var i = 0; i < cards.length; i++) {
+                                cards[i].style.display = "none";
+                            }
+
+                            if (formId === "form1") {
+                                var form1 = document.createElement("form");
+                                form1.innerHTML = `
+                                <h3>LPPM</h3>
+                                <div class="form-group">
+                        <label for="LPPM">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form1);
+                                var card = document.getElementById(cardId);
+                                card.style.display = "none";
+                            } else if (formId === "form2") {
+                                var form2 = document.createElement("form");
+                                form2.innerHTML = `
+                                <h3>Mitra Kerjasama IT Del</h3>
+                                <div class="form-group">
+                        
+                    <div class="form-group">
+                        <label for="deskripsi">Add link:</label>
+                        <textarea class="form-control" id="link" name="link"></textarea>
+                    </div>
+                                
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form2);
+                            } else if (formId === "form3") {
+                                var form3 = document.createElement("form");
+                                form3.innerHTML = `
+                                <h3>UPT PP ESTEM</h3>
+                                <div class="form-group">
+                        <label for="UPT">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form3);
+                            } else if (formId === "form4") {
+                                var form4 = document.createElement("form");
+                                form4.innerHTML = `
+                                <h3>Sistem Penjamin Mutu</h3>
+                                <div class="form-group">
+                        <label for="SPM">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form4);
+                            } else if (formId === "form5") {
+                                var form5 = document.createElement("form");
+                                form5.innerHTML = `
+                                <h3>Pusat Modal Manusia</h3>
+                                <div class="form-group">
+                        <label for="PMS">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form5);
+                            } else if (formId === "form6") {
+                                var form6 = document.createElement("form");
+                                form6.innerHTML = `
+                                <h3>Koperasi</h3>
+                                <div class="form-group">
+                        <label for="KOPERASI">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form6);
+                            } else if (formId === "form7") {
+                                var form7 = document.createElement("form");
+                                form7.innerHTML = `
+                                <h3>Pusat Bahasa IT Del</h3>
+                                <div class="form-group">
+                        <label for="PBI">Judul:</label>
+                        <input type="text" class="form-control" id="Judul" name="Judul">
+                    </div>
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi:</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                                <div class="form-group">
+                        <label for="Image">Image:</label>
+                        <input type="file" class="form-control-file" id="Image" name="Image">
+                    </div>
+                    <button style="background-color: green; color: white;" onclick="createData()">Simpan</button>
+            <button style="background-color: blue; color: white;" onclick="readData()">Tampilkan Data</button>
+            <button style="background-color: orange; color: white;" onclick="updateData()">Ubah Data</button>
+            <button style="background-color: red; color: white;" onclick="deleteData()">Hapus Data</button>
+                            `;
+                                formContainer.appendChild(form7);
+                            }
+
+
+                        }
+
+                        function createData() {
+                            // Fungsi untuk membuat data baru
+                            // Implementasikan logika create data sesuai kebutuhan
+                            console.log("Membuat data baru");
+                        }
+
+                        function readData() {
+                            // Fungsi untuk membaca data
+                            // Implementasikan logika membaca data sesuai kebutuhan
+                            console.log("Membaca data");
+                        }
+
+                        function updateData() {
+                            // Fungsi untuk mengubah data
+                            // Implementasikan logika update data sesuai kebutuhan
+                            console.log("Mengubah data");
+                        }
+
+                        function deleteData() {
+                            // Fungsi untuk menghapus data
+                            // Implementasikan logika delete data sesuai kebutuhan
+                            console.log("Menghapus data");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

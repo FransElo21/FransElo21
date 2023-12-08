@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="Logo.png" alt="Institut Teknologi Del" width="50">
+        <h6>Institut Teknologi Del</h6>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-circle"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 sidebar">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="Dashboard_admin.html" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-house-fill"></i>
+                            </span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-basket-fill"></i>Tentang del</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pendidikan.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-book"></i>Program Pendidikan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/feedback-admin" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-envelope"></i>Akses Cepat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Lembaga.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-building"></i>Lembaga</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fasilitas.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-laptop"></i>Fasilitas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/akun-user" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-people-fill"></i>Karir</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/admin-new" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-person-fill-add"></i> Daftar Admin Baru</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Pengumuman</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Pengumuman.html" class="nav-link px-3">
+                            <span class="me-2">
+                            </span>
+                            <span><i class="bi bi-bell-fill"></i> Manajemen Account</span>
+                        </a>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-10 content">
+                <h1>Selamat datang, Admin!</h1>
+                <p>Ini adalah halaman admin.</p>
+                <div class="box">
+                    <div class="box-item">
+                        <i class="bi bi-eye-fill"></i>
+                        <h3>Viewers</h3>
+                        <p class="count">1000</p>
+                    </div>
+                    <div class="box-item">
+                        <i class="bi bi-person-badge-fill"></i>
+                        <h3>Admin</h3>
+                        <p class="count">5</p>
+                    </div>
+                    <div class="box-item">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>User Online</h3>
+                        <p class="count">50</p>
+                    </div>
+                </div>
+                <h2></h2>
+                <div class="container">
+
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+
+                <script>
+                    // Data jumlah mahasiswa tahun ke tahun
+                    const tahun = [2018, 2019, 2020, 2021, 2022, 2023];
+                    const jumlahMahasiswa = [1100, 1200, 1500, 1800, 2000, 2200];
+
+                    // Membuat grafik dengan Chart.js
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: tahun,
+                            datasets: [{
+                                label: 'Jumlah Mahasiswa',
+                                data: jumlahMahasiswa,
+                                backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                                borderColor: 'rgba(0, 123, 255, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
