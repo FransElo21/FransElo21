@@ -1,0 +1,281 @@
+header {
+  background-color: #451773;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flag-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: #141d2a;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#myCarousel .carousel-inner img {
+  width: 100%;
+  height: 600px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+  object-fit: cover; /* Memastikan gambar terisi sepenuhnya */
+}
+
+.border-bottomm{
+  background-color:rgb(255, 255, 255);
+}
+
+ul.nav-link {
+  font-family: 'Your Desired Font', sans-serif;
+  color: #fff; 
+}
+
+span.fs-4,
+span.fs-5 {
+  font-family: 'Your Desired Font', sans-serif;
+  color: #fff;
+}
+.row1{
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 664px;
+  height: 405px;
+  flex-shrink: 0;
+}
+
+.row2{
+  width: 600px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.custom-hr {
+  border-top: 20px solid ; 
+  color: #0477BF;
+  margin: 20px 0; 
+}
+
+.custom-hrv {
+  border-top: 20px solid ; 
+  color: #0477BF;
+  margin: 20px 0; 
+}
+
+.custom-hrv1 {
+  margin-right: 25px;
+  border-top: 20px solid ; 
+  color: #0477BF;
+}
+
+.fade-up {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/*Footer*/
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  height: 70vh; }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    a, a:hover {
+      text-decoration: none !important; }
+  
+.content {
+    height: 70vh; }
+  
+.footer-20192 {
+    position: relative;
+    color: #fff;
+    padding: 7rem 0;
+    background-color: #141d2a; }
+  .footer-20192 .container {
+      position: relative; }
+  .footer-20192 h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-top: 0;
+      line-height: 1.5; }
+  .footer-20192 .links li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      display: block; }
+  .footer-20192 .links li a {
+        color: #666873; }
+      .footer-20192 .links li a:hover {
+          color: #fff; }
+  .footer-20192 .social li {
+      display: inline-block;
+      position: relative; }
+    .footer-20192 .social li a {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        background-color: #451773;
+        color: #fff; }
+    .footer-20192 .social li a > span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+    .footer-20192 .footer-logo {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .1rem; }
+    .footer-20192 .copyright {
+      color: #666873; }
+    .footer-20192 .cta {
+      -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+      box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
+      padding: 20px;
+      background-color: #451773;
+      top: -150px;
+      position: relative; }
+      .footer-20192 .cta h2, .footer-20192 .cta h3 {
+        line-height: 1.5; }
+      .footer-20192 .cta h3 {
+        font-size: 20px; }
+
+        .list-unstyled.social {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .list-unstyled.social li {
+          margin-bottom: 10px; /* Atur jarak antara setiap elemen <li> */
+      }
+      
+      .list-unstyled.social li a {
+          text-decoration: none;
+      }
+
+.footer-20192 {
+  text-align: center;
+}
+
+.footer-20192 p {
+  margin: 0;
+}
+
+.footer {
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.row.d-flex {
+  display: flex;
+}
+
+.peng {
+  flex: 1; 
+  margin-right: 10px; 
+  font-size: large;
+}
+
+.mb-0{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hr{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek keempukan */
+}
+
+p {
+  line-height: 1.6;
+  font-size: large;
+  font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-link:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-img-top {
+  height: 200px; /* Atur tinggi gambar sesuai kebutuhan */
+  object-fit: cover;
+}
